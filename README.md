@@ -1,6 +1,3 @@
-Agency-Landing-Page
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Agency Landing Page
 
 This is an HTMl and CSS design for Agency website.
