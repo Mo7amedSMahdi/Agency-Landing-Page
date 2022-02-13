@@ -289,3 +289,27 @@ input[type="reset"] {
   background-color: var(--clr-dark);
   transition: width 0.3s ease-in-out;
 }
+
+/*-----------------*/
+/* Intro Section */
+/*----------------*/
+.intro {
+  align-items: flex-end;
+  padding: 95px 70px;
+  height: 703px;
+}
+.intro h1 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 88px;
+  line-height: 96px;
+}
+.img-cards {
+  height: 540px;
+}
+.img-rocket {
+  height: 669px;
+  position: relative;
+  bottom: -95px;
+}
