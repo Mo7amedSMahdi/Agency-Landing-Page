@@ -289,3 +289,85 @@ input[type="reset"] {
   background-color: var(--clr-dark);
   transition: width 0.3s ease-in-out;
 }
+
+/*-----------------*/
+/* Intro Section */
+/*----------------*/
+.intro--header {
+  align-items: flex-end;
+  padding: 95px 70px;
+  height: 703px;
+}
+.intro--header h1 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 88px;
+  line-height: 96px;
+}
+.img-cards {
+  height: 540px;
+}
+.img-rocket {
+  height: 669px;
+  position: relative;
+  bottom: -95px;
+}
+
+.intro--title {
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+  padding: 0 268px;
+  --gap: 32px;
+}
+.intro--title h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.33px;
+  color: var(--clr-text-dark);
+}
+.intro--title p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--clr-text-light);
+  max-width: 438px;
+}
+.intro--counters {
+  padding: 48px 175px;
+  --gap: 109px;
+  justify-content: center;
+  align-items: center;
+}
+.counter {
+  --gap: 16px;
+}
+.counter h3 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.33px;
+  color: var(--clr-text-dark);
+}
+.counter p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--clr-text-light);
+}
