@@ -601,3 +601,75 @@ input[type="reset"] {
   width: 48px;
   height: 48px;
 }
+
+/*-----------------*/
+/* Features section*/
+/*----------------*/
+
+.features {
+  padding: 122px 190px;
+  background-color: #fbf9f9;
+  --gap: 110px;
+}
+
+.features--content {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.features--content img {
+  flex: 1.4;
+  width: 400px;
+  height: 460px;
+}
+
+.features--description {
+  flex: 0.6;
+  --gap: 20px;
+  margin-top: 20px;
+}
+
+.features--description h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  color: var(--clr-text-dark-blue);
+}
+
+.features--description p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--clr-text-light);
+}
+
+.features--counters {
+  justify-content: space-between;
+}
+
+.counter {
+  --gap: 20px;
+  align-items: flex-start;
+}
+
+.counter h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  color: var(--clr-text-dark-blue);
+}
+
+.counter p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--clr-text-light);
+}
