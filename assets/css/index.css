@@ -218,22 +218,26 @@ input[type="reset"] {
 .row {
   flex-direction: row;
 }
+
 .button-filled {
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  background-color: var(--clr-dark);
-  color: var(--clr-white);
+  border-radius: var(--btn-filled-radius, 10px);
+  background-color: var(--clr-filled-btn, #fff);
+  color: var(--clr-filled-btn-text, #fff);
   font-family: var(--ff-inter);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   padding: 14px 27px;
+  width: var(--width-btn, 100%);
 }
+
 .button-outlined {
-  border: 1px solid var(--clr-border-blue);
+  border: 1px solid;
+  border-color: var(--clr-bordered-btn, #fff);
   border-radius: 10px;
-  color: var(--clr-text-dark);
+  color: var(--clr-bordered-btn-text, #fff);
   font-family: var(--ff-inter);
   font-style: normal;
   font-weight: 600;
@@ -289,6 +293,12 @@ input[type="reset"] {
   background-color: var(--clr-dark);
   transition: width 0.3s ease-in-out;
 }
+.button-group {
+  --clr-filled-btn: var(--clr-dark);
+  --clr-filled-btn-text: var(--clr-white);
+  --clr-bordered-btn: var(--clr-border-blue);
+  --clr-bordered-btn-text: var(--clr-dark);
+}
 
 /*-----------------*/
 /* Intro Section */
@@ -329,7 +339,7 @@ input[type="reset"] {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.33px;
-  color: var(--clr-text-dark);
+  color: var(--clr-text-dark-blue);
 }
 .intro--title p {
   font-family: var(--ff-inter);
@@ -343,7 +353,7 @@ input[type="reset"] {
   max-width: 438px;
 }
 .intro--counters {
-  padding: 48px 175px;
+  padding: 48px 145px;
   --gap: 109px;
   justify-content: center;
   align-items: center;
@@ -359,7 +369,7 @@ input[type="reset"] {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.33px;
-  color: var(--clr-text-dark);
+  color: var(--clr-text-dark-blue);
 }
 .counter p {
   font-family: var(--ff-inter);
@@ -370,4 +380,224 @@ input[type="reset"] {
   text-align: center;
   letter-spacing: 0.2px;
   color: var(--clr-text-light);
+}
+
+/*-----------------*/
+/* How it works section*/
+/*----------------*/
+.hiw {
+  margin-top: 145px;
+}
+.hiw--feature-1 {
+  padding: 40px 147px;
+  --gap: 85px;
+}
+.feature-1--content {
+  max-width: 542px;
+  --gap: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.feature-1--content h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 110%;
+  color: var(--clr-text-dark-blue);
+}
+.content--description {
+  --gap: 16px;
+  padding: 35px 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.content--description:hover {
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.content--description h3 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  color: var(--clr-text-dark-blue);
+}
+.content--description p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  color: var(--clr-text-light);
+}
+
+/*-----------------*/
+/* Services section*/
+/*----------------*/
+
+.service--1 {
+  margin-top: 145px;
+  padding: 95px 135px;
+  background-color: #f3f5fa;
+}
+
+.achive {
+  flex: 0.5;
+}
+
+.achive p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  color: #999aab;
+}
+
+.achive h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--clr-text-dark-blue);
+}
+
+.services--container {
+  flex: 1;
+}
+
+.service {
+  --gap: 10px;
+}
+
+.service object {
+  width: 75px;
+  height: 75px;
+}
+
+.service--content {
+  --gap: 14px;
+}
+
+.service--content h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  color: var(--clr-text-dark-blue);
+}
+
+.service--content p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #656562;
+  color: var(--clr-text-light);
+}
+
+.service--2 {
+  margin-top: 72px;
+  padding: 66px 135px;
+  --gap: 120px;
+}
+
+.service--2-content {
+  flex: 0.5;
+  align-items: flex-start;
+  --gap: 20px;
+}
+.service--2-content h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 62px;
+  letter-spacing: -0.01em;
+  color: var(--clr-text-dark-blue);
+}
+
+.service--2-content p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--clr-text-light);
+}
+
+.service--2-content ul {
+  list-style: none;
+  all: unset;
+}
+
+.service--2-content ul > li {
+  justify-content: flex-start;
+  align-items: center;
+  --gap: 0;
+}
+
+.service--2-content ul > li > img {
+  width: 44px;
+  height: 44px;
+}
+
+.service--2-content ul > li > p {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: var(--clr-text-light);
+  margin-bottom: 10px;
+}
+
+.service--2-content button {
+  --width-btn: 160px;
+  --clr-filled-btn: var(--clr-dark);
+  --clr-filled-btn-text: var(--clr-white);
+  --btn-filled-radius: 50px;
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 20px 31px;
+}
+
+.services-cards {
+  grid-template-columns: repeat(2, auto);
+  flex: 1;
+  --gap: 40px;
+}
+.card {
+  --gap: 20px;
+  border: 1px solid #f0f0f0;
+  padding: 35px 40px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border: 0;
+}
+
+.card img {
+  width: 48px;
+  height: 48px;
 }
