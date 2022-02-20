@@ -673,3 +673,94 @@ input[type="reset"] {
   line-height: 22px;
   color: var(--clr-text-light);
 }
+
+/*-----------------*/
+/* Features section*/
+/*----------------*/
+.testimonial {
+  padding: 190px 134px;
+  --gap: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__title h2 {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 47.5295px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: var(--clr-text-dark-blue);
+}
+
+.testimonial__card {
+  background-color: var(--clr-white);
+  border-radius: 10.3325px;
+  padding: 70px 40px;
+  --gap: 12px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial__card:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border: 0;
+}
+
+.testimonial__card__img {
+  max-width: 99.19px;
+}
+
+.testimonial__card__msg {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 161.52%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: var(--clr-text-light);
+  max-width: 18ch;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial__card__author {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 161.52%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #121e31;
+}
+
+.testimonial__card__line {
+  content: "";
+  left: 0;
+  top: 100%;
+  width: 21%;
+  height: 3px;
+  background-color: #fcc4ad;
+  transition: width 0.3s ease-in-out;
+}
+
+.testimonial__card__job-title {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.05em;
+  color: var(--clr-text-light);
+}
