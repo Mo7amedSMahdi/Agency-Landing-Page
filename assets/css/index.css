@@ -764,3 +764,29 @@ input[type="reset"] {
   letter-spacing: -0.05em;
   color: var(--clr-text-light);
 }
+
+/*-----------------*/
+/* Brands section*/
+/*----------------*/
+
+.brands {
+  padding: 133px 152px;
+  background-color: #faf9f9;
+  align-items: center;
+  --gap: 65px;
+}
+
+.brands__title {
+  font-family: var(--ff-inter);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--clr-text-dark-blue);
+}
+
+.brands__list {
+  list-style-type: none;
+  --gap: 86px;
+}
