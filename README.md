@@ -2,7 +2,7 @@
 
 This is an HTMl and CSS design for Agency website.
 
-**The orginal design in designed by [AR Shakir](https://dribbble.com/arshakir)**
+**The orginal design by [AR Shakir](https://dribbble.com/arshakir)**
 
 **Design file downloaded from [freebiesbug](https://freebiesbug.com/)**
 
